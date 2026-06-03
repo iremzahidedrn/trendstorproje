@@ -76,31 +76,3 @@ Site 3 ana breakpoint'te optimize edilmiştir:
 
 Herhangi bir soru veya öneriniz için iletişime geçebilirsiniz.
 
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
-
-## Sunucu tabanlı Yönetim (Node + SQLite)
-
-Proje, sunucu tabanlı admin ve API desteği için bir Node/Express + SQLite backend içerir.
-
-Kurulum (Windows / PowerShell):
-
-1. Terminali proje kökünde aç:
-
-    cd "C:\Users\bedir\Desktop\TrendStore2\server"
-2. Bağımlılıkları yükle:
-
-    npm install
-
-3. Geliştirme modu ile çalıştır:
-
-    npm run dev
-
-4. Admin paneli tarayıcıda aç:
-
-    http://localhost:3000/admin/
-
-Notlar:
-- Görseller `uploads/` klasörüne yüklenir ve `/uploads/` üzerinden servis edilir.
-- Shopiere entegrasyonu için merchant anahtarlarını sağladığınızda checkout endpoint'ini gerçek ödeme yönlendirmesiyle bağlayacağım.
