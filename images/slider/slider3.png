@@ -1,0 +1,63 @@
+<!-- Slide 3 - Shoes Collection -->
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="slide3Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0392B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="whiteText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F8F9FA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="500" fill="url(#slide3Bg)"/>
+  
+  <!-- Dynamic pattern -->
+  <pattern id="dynamicPattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+    <rect width="80" height="80" fill="none"/>
+    <circle cx="40" cy="40" r="2" fill="rgba(255,255,255,0.1)"/>
+    <path d="M 20 20 L 60 60 M 60 20 L 20 60" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="500" fill="url(#dynamicPattern)"/>
+  
+  <!-- Main content container -->
+  <rect x="100" y="50" width="1000" height="400" rx="20" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Main title -->
+  <text x="600" y="140" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="url(#whiteText)" text-anchor="middle">AYAKKABI</text>
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="url(#whiteText)" text-anchor="middle">KOLEKSİYONU</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="240" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.9)" text-anchor="middle">Spor • Klasik • Günlük</text>
+  
+  <!-- Brand showcase -->
+  <rect x="200" y="280" width="100" height="40" rx="20" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="250" y="305" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFF" text-anchor="middle">NIKE</text>
+  
+  <rect x="320" y="280" width="100" height="40" rx="20" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="370" y="305" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFF" text-anchor="middle">ADIDAS</text>
+  
+  <rect x="440" y="280" width="100" height="40" rx="20" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="490" y="305" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFF" text-anchor="middle">PUMA</text>
+  
+  <rect x="560" y="280" width="100" height="40" rx="20" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="610" y="305" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFF" text-anchor="middle">NEW BALANCE</text>
+  
+  <rect x="680" y="280" width="100" height="40" rx="20" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="730" y="305" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFF" text-anchor="middle">BOSS</text>
+  
+  <rect x="800" y="280" width="100" height="40" rx="20" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="850" y="305" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFF" text-anchor="middle">ARMANI</text>
+  
+  <!-- Call to action button -->
+  <rect x="400" y="360" width="400" height="60" rx="30" fill="rgba(255,255,255,0.9)" stroke="none"/>
+  <text x="600" y="400" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#E74C3C" text-anchor="middle">AYAKKABI KOLEKSİYONUNU GÖZAT</text>
+  
+  <!-- Decorative elements -->
+  <polygon points="150,120 170,140 150,160 130,140" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="1050,120 1070,140 1050,160 1030,140" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="150,380 170,400 150,420 130,400" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="1050,380 1070,400 1050,420 1030,400" fill="rgba(255,255,255,0.3)"/>
+</svg>

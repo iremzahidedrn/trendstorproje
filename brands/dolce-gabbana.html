@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dolce &amp; Gabbana - Trend Store</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .brand-hero{padding:30px 0 16px;display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center;background:transparent}
+        .brand-hero .meta h1{margin:0;font-size:2.6rem;letter-spacing:6px;color:var(--text-dark);font-weight:800;text-transform:uppercase}
+        .brand-products .products-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));max-width:1100px}
+        .back-home{display:inline-block;text-decoration:none;padding:10px 18px;border-radius:999px;background:linear-gradient(135deg,#111 0%,#3a3a3a 100%);color:#fff;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .18s ease,box-shadow .18s ease,opacity .18s ease;letter-spacing:1px}
+        .back-home:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.32);opacity:.98}
+        .back-home:active{transform:translateY(-2px)}
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a href="../index.html" class="btn primary back-home">← Ana Sayfa</a>
+    </div>
+</header>
+<main class="brand-page">
+    <div class="container">
+        <section class="brand-hero">
+            <div class="meta">
+                <h1 class="brand-title">DOLCE &amp; GABBANA</h1>
+            </div>
+        </section>
+        <section class="brand-products">
+            <div class="products-grid"></div>
+        </section>
+    </div>
+</main>
+<footer class="footer"></footer>
+<script src="../js/script.js"></script>
+</body>
+</html>

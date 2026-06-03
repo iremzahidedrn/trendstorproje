@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trend Store - Erkek Giyim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-banner">
+            <div class="banner-content">
+                <div class="banner-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Destek Hattı: 0534 442 0117</span>
+                </div>
+                <div class="banner-item">
+                    <i class="fas fa-truck"></i>
+                    <span>Tüm Alışverişlerde Ücretsiz Kargo</span>
+                </div>
+                <div class="banner-item">
+                    <i class="fas fa-clock"></i>
+                    <span>1-4 İş Günü Kargo</span>
+                </div>
+                <div class="banner-item">
+                    <i class="fas fa-undo"></i>
+                    <span>15 Gün İçinde İade Hakkı</span>
+                </div>
+                <div class="banner-item">
+                    <i class="fas fa-gift"></i>
+                    <span>İlk Alışverişinize 250 TL Hediye Çeki</span>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="images/Logo.jpeg" alt="Trend Store" class="logo">
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link">Gömlek</a></li>
+                    <li><a href="#" class="nav-link">T-Shirt</a></li>
+                    <li><a href="#" class="nav-link">Pantolon</a></li>
+                    <li><a href="#" class="nav-link">Ceket</a></li>
+                    <li><a href="#" class="nav-link">Ayakkabı</a></li>
+                    <li><a href="#" class="nav-link">Aksesuar</a></li>
+                    <li><a href="#" class="nav-link">% İndirim</a></li>
+                    <li><a href="#" class="nav-link">Yeni Sezon</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Kargo Durumu">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <a href="#" class="nav-action">Yardım</a>
+                    <a href="#" class="nav-action">Bize Ulaşın</a>
+                    <div class="language-selector">
+                        <span>TR</span>
+                        <span>TL</span>
+                    </div>
+                    <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="slide active" id="slide1">
+                <div class="slide-image">
+                    <img src="images/slider/slider1.png" alt="Trend Store - Premium Erkek Giyim" class="slider-img">
+                    <!-- Hero Content -->
+                    <div class="slide-overlay">
+                        <div class="hero-text">
+                            <h1 class="hero-title">TREND STORE</h1>
+                            <p class="hero-subtitle">Premium Erkek Giyim Koleksiyonu</p>
+                        </div>
+                        <button class="explore-btn" onclick="scrollToProducts()">
+                            KEŞFET
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Only one slide kept (slide2 & slide3 removed). Slider controls/indicators intentionally removed to keep static hero. -->
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands">
+        <div class="container">
+            <div class="brands-wrapper">
+                <button class="carousel-btn prev-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="brands-carousel" id="brandsCarousel">
+                    <!-- Öncelikli markalar: Prada, Boss, Moncler, Ami -->
+                    <div class="brand-item" data-brand="prada">
+                        <a href="brands/prada.html" class="brand-link" data-brand="prada">
+                            <img src="images/brands/prada.jpg" alt="Prada">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="boss">
+                        <a href="brands/boss.html" class="brand-link" data-brand="boss">
+                            <img src="images/brands/BOSS.jpg" alt="BOSS">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="moncler">
+                        <a href="brands/moncler.html" class="brand-link" data-brand="moncler">
+                            <img src="images/brands/Moncler.jpg" alt="Moncler">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="ami">
+                        <a href="brands/ami.html" class="brand-link" data-brand="ami">
+                            <img src="images/brands/ami.png" alt="Ami">
+                        </a>
+                    </div>
+                    <!-- Diğer markalar -->
+                    <div class="brand-item" data-brand="ea7">
+                        <a href="brands/ea7.html" class="brand-link" data-brand="ea7">
+                            <img src="images/brands/EA7.jpg" alt="EA7 Emporio Armani">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="burberry">
+                        <a href="brands/burberry.html" class="brand-link" data-brand="burberry">
+                            <img src="images/brands/Burberry.png" alt="Burberry">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="valentino">
+                        <a href="brands/valentino.html" class="brand-link" data-brand="valentino">
+                            <img src="images/brands/Velentino.png" alt="Valentino">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="givenchy">
+                        <a href="brands/givenchy.html" class="brand-link" data-brand="givenchy">
+                            <img src="images/brands/Gıvenchy.webp" alt="Givenchy">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="dolce-gabbana">
+                        <a href="brands/dolce-gabbana.html" class="brand-link" data-brand="dolce-gabbana">
+                            <img src="images/brands/Dolce Gabbana.png" alt="Dolce &amp; Gabbana">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="alo">
+                        <a href="brands/alo.html" class="brand-link" data-brand="alo">
+                            <img src="images/brands/alo.png" alt="Alo">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="zegna">
+                        <a href="brands/zegna.html" class="brand-link" data-brand="zegna">
+                            <img src="images/brands/Zegna.webp" alt="Zegna">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="stone-island">
+                        <a href="brands/stone-island.html" class="brand-link" data-brand="stone-island">
+                            <img src="images/brands/Stone Island.png" alt="Stone Island">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="calvin-klein">
+                        <a href="brands/calvin-klein.html" class="brand-link" data-brand="calvin-klein">
+                            <img src="images/brands/CALVİN KLEİN.jpg" alt="Calvin Klein">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="guess">
+                        <a href="brands/guess.html" class="brand-link" data-brand="guess">
+                            <img src="images/brands/GUESS.jpg" alt="GUESS">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="champion">
+                        <a href="brands/champion.html" class="brand-link" data-brand="champion">
+                            <img src="images/brands/CHAMPİON.jpg" alt="Champion">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="emporio-armani">
+                        <a href="brands/emporio-armani.html" class="brand-link" data-brand="emporio-armani">
+                            <img src="images/brands/EMPPORİO ARMANI.jpg" alt="Emporio Armani">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="armani">
+                        <a href="brands/armani.html" class="brand-link" data-brand="armani">
+                            <img src="images/brands/ARMANİ.jpg" alt="Armani">
+                        </a>
+                    </div>
+                    <div class="brand-item" data-brand="dsquared2">
+                        <a href="brands/dsquared2.html" class="brand-link" data-brand="dsquared2">
+                            <img src="images/brands/DSQUARED2.jpg" alt="Dsquared2">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Season Products -->
+    <section class="new-season-products" id="products">
+        <div class="container">
+            <h2 class="section-title">YENİ SEZON ÜRÜNLER</h2>
+            <div class="products-grid" data-random-count="3">
+                <div class="product-card" data-brand="boss">
+                    <div class="product-image">
+                        <img src="images/products/product1.jpg" alt="Erkek Ceket">
+                        <div class="product-overlay">
+                            <button class="quick-view">Hızlı Görüntüle</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Erkek Ceket</h3>
+                        <p class="brand">BOSS</p>
+                        <p class="price">2.599 TL</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-brand="calvin-klein">
+                    <div class="product-image">
+                        <img src="images/products/product2.jpg" alt="Erkek Gömlek">
+                        <div class="product-overlay">
+                            <button class="quick-view">Hızlı Görüntüle</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Klasik Erkek Gömlek</h3>
+                        <p class="brand">Calvin Klein</p>
+                        <p class="price">899 TL</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-brand="armani-exchange">
+                    <div class="product-image">
+                        <img src="images/products/product3.jpg" alt="Erkek Pantolon">
+                        <div class="product-overlay">
+                            <button class="quick-view">Hızlı Görüntüle</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Slim Fit Pantolon</h3>
+                        <p class="brand">Armani Exchange</p>
+                        <p class="price">1.299 TL</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-brand="hugo-boss">
+                    <div class="product-image">
+                        <img src="images/products/product4.jpg" alt="Erkek Ayakkabı">
+                        <div class="product-overlay">
+                            <button class="quick-view">Hızlı Görüntüle</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Deri Ayakkabı</h3>
+                        <p class="brand">Hugo Boss</p>
+                        <p class="price">1.899 TL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Deals Section (replaces old brand showcase) -->
+    <section class="weekly-deals">
+        <div class="container">
+            <div class="weekly-header">
+                <h2 class="section-title">HAFTANIN FIRSATLARI</h2>
+                <p class="weekly-sub">Sınırlı süreli indirimli ürünler – stoklar tükenmeden yakalayın!</p>
+            </div>
+            <div class="products-grid weekly" data-weekly-deals="true" data-random-count="3"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Trend Store</h4>
+                    <p>Premium erkek giyim mağazanız. En yeni trendler ve kaliteli markalarla stil sahibi olun.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kategoriler</h4>
+                    <ul>
+                        <li><a href="#">Gömlek</a></li>
+                        <li><a href="#">Pantolon</a></li>
+                        <li><a href="#">T-Shirt</a></li>
+                        <li><a href="#">Ceket</a></li>
+                        <li><a href="#">Ayakkabı</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Müşteri Hizmetleri</h4>
+                    <ul>
+                        <li><a href="#">İletişim</a></li>
+                        <li><a href="#">Sipariş Takibi</a></li>
+                        <li><a href="#">İade & Değişim</a></li>
+                        <li><a href="#">Kargo</a></li>
+                        <li><a href="#">SSS</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kurumsal</h4>
+                    <ul>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                        <li><a href="#">Kullanım Koşulları</a></li>
+                        <li><a href="#">KVKK</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trend Store. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
